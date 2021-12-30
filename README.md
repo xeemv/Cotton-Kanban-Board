@@ -35,6 +35,12 @@
 Personal Kanban Board project I created during the two week holiday break from my coding bootcamp. 
 <p>
 For this project, dcode demonstrated how to use the local storage and JavaScript to store the data.  This is new to me and very informative. I did include a lot of comments and notes within my .js files that I felt would be beneficial for me to reference again should I attempt to expand on the this project down the road.</p>
+<p>
+This is the finalized project and had to be recreated due to an error with the file names from the Cotton Candy Kanban Board. I had originally named two of the files as kanban.js and kanbanAPI.js.</p>
+<p>
+I later updated the file names to Kanban.js and KanbanAPI.js. However, when the project was published on github pages, an error occurred stating "Loading module from "https://xeemv.github.io/Cotton-Candy-Kanban-Board/js/view/Kanban.js" was blocked because of a disallowed MIME type ("text/html").</p>
+<p>
+Thanks to James Vue and my mentor, Jolene Melanson, for helping to debug this issue.</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
