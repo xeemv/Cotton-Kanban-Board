@@ -149,7 +149,7 @@ I'm currently in week 4 of my front-end software coding bootcamp and found that 
 
 Xee M. V. - xeeyang08@gmail.com
 
-Project Link: [https://github.com/xeemv/Cotton-Candy-Kanban-Board](https://xeemv.github.io/Cotton-Candy-Kanban-Board/)
+Project Link: [https://github.com/xeemv/Cotton-Kanban-Board](https://xeemv.github.io/Cotton-Kanban-Board/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
