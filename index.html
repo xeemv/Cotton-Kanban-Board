@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cotton Kanban Board</title>
+</head>
+<body>
+    <h1>Cotton Kanban Board</h1>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style> <!-- this is the best way I found to center my header w/o creating issues with the flex container for the kanban class-->
+  <div class="kanban"> 
+        <!-- the main container for the board
+    <div class="kanban__column"> 
+        -- represent a single column on the board
+    <div class="kanban__column-title">Not Started</div> 
+        -- represent a title for said column on the board
+    <div class="kanban__items"> 
+        -- to store items we drop down in that column on the board
+    <div contenteditable class="kanban__item-input">Wash the dishes</div> 
+        - line 15 is the area that the user could edit.
+        - contenteditable will allow users to make edits to that input section 
+    <div class="kanban__dropzone kanban__dropzone--active"></div>
+     
+        - line 20 is going to highlight the area that the user drags and item over it.
+        - it will highlight the area above and below where the user will drop the item.
+    </div>
+    <button class="kanban__add-item" type="button">+ Add</button> 
+    - adding a button to the column using type="button" and the name on the button will be "+ add".
+    - code line 11 - 20 is the basic structure on the kanban board.
+    </div> -->
+</div>
+
+    <script type="module" src="js/main.js"></script>
+    <script language="JavaScript" type="text/javascript"></script>
+    <!-- <script type="module" src="js/api/KanbanAPI.js"></script>
+    <script type="module" src="js/view/Column.js"></script>
+    <script type="module" src="js/view/DropZone.js"></script>
+    <script type="module" src="js/view/Item.js"></script>
+    <script type="module" src="js/view/Kanban.js"></script> -->
+    <!-- module is important and needed for es6 import/export syntax for the solution today-->
+</body>
+</html>

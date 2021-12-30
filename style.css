@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    /*background: linear-gradient(to right, #ff105f, #ffad06); /* took this from my login-form. No longer using this as I found a beautiful background img.*/
+    background-image: url(image/sky.png);
+    background-size: cover; /*This property/value pair tells the browser to scale the background image proportionally so that its width and height are equal to, or greater than, the width/height of the element. - Per https://www.webfx.com/blog/web-design/responsive-background-image/ */
+    background-position-x: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
+    background-position-y: center; /*incase the img gets scaled up and get distorted (height and width), this will keep it center*/
+    background-attachment: fixed; /*to prevent the photo from scrolling on the page or img ending before page does*/
+    background-repeat: no-repeat; /*to prevent the photo from repeating on the screen*/
+    /* codes from line 5 to 10 are taken from my tip calculator/expanding card project*/
+    font-family: 'Shadows Into Light', cursive;
+}
+.kanban {
+    display: flex; /* using flex here to create the 3 column layout */
+    padding: 4px;
+    width: 750px;
+    background: #8e5ec5;
+    border-radius: 5px;
+    margin: auto; /* tutorial had this set to 0, I changed it to auto per my expanding card project to center this*/
+    min-height: 100vh;
+}   
+.kanban__column{
+    flex: 1;
+    /* this will ensure every column has an equal width*/
+}
+.kanban__column:not(:last-child){
+ /* this is basically saying that every single column that isn't the last one, is going to have a margin right. */
+    margin-right: 5px;
+}
+.kanban__column-title{
+    margin-bottom: 20px; 
+	font-size: 30px;
+	color: black; /* the title words will be black, in the video it was white */
+	user-select: none; /* to prevent accidental highlight when selecting the content inside your items */
+    text-align: center; /* I added this as tutorial did not have this*/
+}
+.kanban__item-input{
+    padding: 10px 15px;
+    box-sizing: border-box; /* to prevent it from going over its boundaries */
+    background: rgb(250, 212, 217); /* the background for "wash the dishes"/input will be a very light pink*/
+    border-radius: 10px; /* tutorial was 5*/
+    cursor: pointer; /* to inform the user they can click and drag these items */
+    text-align: center; /* I added this as tutorial did not have this*/
+}
+.kanban__item-input:hover{
+    background-color: rgb(243, 165, 217);
+}
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s; 
+    /* 
+    - this is so that when the user drags an item over the drop zone 
+    - we need to change the background color and height 
+    - this will tell them they could drop that item here*/
+}
+.kanban__dropzone--active { /* this part will need js to add an active modifier class to the dropzone element */
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black; /* the word "+ add" will be black*/
+	background: rgba(0, 0, 0, 0.1);
+	border: 20px;
+	border-radius: 10px;
+	cursor: pointer
+}
+.kanban__add-item:hover{
+    background-color: rgb(198, 149, 243);
+}
+@media(max-width:480px){ /* if the device screen is smaller than 480px  */
+    .kanban{
+        width: 100vw;
+    }
+    .panel:nth-last-of-type(4),.panel:nth-last-of-type(5){ /* how many photos do we want to display  */
+        display: none;
+    }
+}
